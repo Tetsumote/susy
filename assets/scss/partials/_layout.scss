@@ -1,2 +1,55 @@
+//Susy setup
+
+$susy:(
+	columns:12,
+	gutters:1/6,
+	global-box-sizing: border-box
+);
+
+.wrap{
+	@include container(70%);
+}
+.features{
+	@include clearfix;
+}
+.features .feature{
+		img{
+		width: 100%;
+	}//to fix
+	@include susy-breakpoint($medium $large - 1){//640 to 960 -1
+		img{
+		width: 100%;
+		}//to fix
+		@include span(6);
+		&:nth-of-type(even){
+		@include last;
+	}
+	
+	}//medium breakpoint
+	@include susy-breakpoint($large){
+	img{
+		width: 100%;
+	}//img
+	@include span(3);
+	&:last-child{
+		@include last;
+	}
+	}//breakpoint
+}//features
+.content{
+	@include susy-breakpoint($large){
+	@include span(8);
+	}//breakpoint large
+}//content
+.sidebar{
+	@include susy-breakpoint($large){
+	@include span(4);
+	@include last;
+	}//breakpoint large
+}//sidebar
+
+
+
+
 
 

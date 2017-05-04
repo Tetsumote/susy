@@ -1,1 +1,11 @@
-
+.site-footer{
+	background: $blue;
+	.social-menu a{
+		color: $gold;
+		&.twitter:before{
+			content: '\f099';
+			font-family: FontAwesome;
+			padding-right: 5px;
+		}// fontAwesome
+	}//social-menu
+}//site-footer
