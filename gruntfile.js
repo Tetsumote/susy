@@ -21,7 +21,7 @@ grunt.initConfig({
 	watch:{
 		sass:{
 			files:[
-				'assets/scss/*.scss'
+				'assets/scss/**/*.scss'
 			],//files
 			tasks:[
 				'sass'
@@ -43,7 +43,7 @@ grunt.initConfig({
 	uglify:{
 		my_target:{
 				files:{
-					'js/scripts.js' : ['assets/js/scripts.js','node_modules/jquery/dist/jquery.js']
+					'js/scripts.js' : ['node_modules/jquery/dist/jquery.js','assets/js/scripts.js']
 			}
 		}//my target
 	}//uglify

@@ -1,2 +1,16 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
 
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';  
+@import 'bower_components/normalize-css/normalize';
+@import 'bower_components/susy/sass/susy';
+
+@import 'partials/variables';
+@import 'partials/modules';
+@import 'partials/base';
+@import 'partials/layout';
+@import 'partials/header';
+@import 'partials/footer';
+
+
+
+ 
