@@ -401,7 +401,8 @@ nav ul {
         color: #0d2d6c; }
 
 .testimonials img {
-  width: 100%; }
+  width: 50%;
+  margin: 0 auto; }
 
 .wrap {
   max-width: 70%;
@@ -455,6 +456,14 @@ nav ul {
     margin-right: 1.2048192771%;
     float: right;
     margin-right: 0; } }
+
+@media (min-width: 960px) {
+  .testimonial {
+    width: 49.3975903614%;
+    float: left;
+    margin-right: 1.2048192771%;
+    margin-left: 25.3012048193%;
+    margin-right: 25.3012048193%; } }
 
 .header-nav {
   background: #ffca00; }
